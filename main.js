@@ -40,20 +40,38 @@ xValue=e.clientX-window.innerWidth / 2;
     animationFunc(e.clientX)
 })
 
-window.onscroll=()=>{
-    let top = window.scrollY;
-    let offset = first_content.offsetTop;
-    let height = first_content.offsetHeight;
-    if(top >= offset && top < offset + height){
-        imagesAnimation()
-    }
-}
-
-const first_content = document.getElementById('first-content');
+const first_content = document.getElementById('start');
 const img_divs = document.querySelectorAll('.img-content div');
     function imagesAnimation(){
         img_divs.forEach(img_div =>{
             const transition = img_div.getAttribute('meta-trans');
             img_div.style.animation=`showimages ${transition}s ease-in-out  0.4s 1 forwards`;
         })    
+    }
+    //--------------------------- navbar customization functions ---------------------------//
+    const sections = document.querySelectorAll('.section');
+    const nav_links = document.querySelectorAll('nav li a');
+    window.onscroll=()=>{
+        sections.forEach(sec =>{
+            let top = window.scrollY;
+            let offset = sec.offsetTop;
+            let height = sec.offsetHeight;
+            let id = sec.getAttribute('id');
+            if(top >= offset && top < offset + height){
+                nav_links.forEach(link =>{
+                    link.classList.remove('selected');
+                    const allNavs = document.querySelectorAll('nav li a[href*='+id+']');
+                    allNavs.forEach(allNav =>{
+                        allNav.classList.add('selected');
+                    })
+                })
+                }
+            })
+        //--------------------------- animation onscroll functions ---------------------------//
+        let top = window.scrollY;
+        let offset = first_content.offsetTop;
+        let height = first_content.offsetHeight;
+        if(top >= offset && top < offset + height){
+            imagesAnimation()
+        }
     }

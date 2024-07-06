@@ -8,48 +8,59 @@
     <title>TRAVELO</title>
 </head>
 <body>
+    <nav class="floating-nav">
+        <ul>
+            <li><a href="#home"></a></li>
+            <li><a href="#start" onclick="imagesAnimation()"></a></li>
+            <li><a href="#journey"></a></li>
+            <li><a href="#offers"></a></li>
+        </ul>
+    </nav>
     <header>
         <nav>
             <img src="images/logo.png" alt="">
             <ul>
-                <li><a href="">login</a></li>
-                <li><a href="">signup</a></li>
-                <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="#home">home</a></li>
+                <li><a href="#start" onclick="imagesAnimation()">start</a></li>
+                <li><a href="#journey">journey</a></li>
+                <li><a href="#offers">offers</a></li>
+                <li><a href="#search"><i class="fa-solid fa-magnifying-glass"></i></a></li>
             </ul>
+            <button>account</button>
         </nav>
     </header>
     <main>
-        <div class="components">
+        <div class="components section" id="home">
             <div class="vin"></div>
-            <img src="images/background.jpg" data-speedx="0.3" data-speedy="0.3" data-speedz="0" data-rotation="0" data-distance="-200" class="parallax background">
-            <img src="images/fog_7.png" data-speedx="0.27" data-speedy="0.27" data-speedz="0" data-rotation="0" data-distance="400" class="parallax fog_7">
-            <img src="images/mountain_10.png" data-speedx="0.195" data-speedy="0.195" data-speedz="0" data-rotation="0" data-distance="850" class="parallax mountain_10">
-            <img src="images/fog_6.png" data-speedx="0.25" data-speedy="0.25" data-speedz="0" data-rotation="0" data-distance="1100" class="parallax fog_6">
-            <img src="images/mountain_9.png" data-speedx="0.125" data-speedy="0.125" data-speedz="0.15" data-rotation="0" data-distance="1400" class="parallax mountain_9">
-            <img src="images/mountain_8.png" data-speedx="0.1" data-speedy="0.1" data-speedz="0" data-rotation="0.02" data-distance="1700" class="parallax mountain_8">
-            <img src="images/fog_5.png" data-speedx="0.16" data-speedy="0.16" data-speedz="0" data-rotation="0" data-distance="1900" class="parallax fog_5">
-            <img src="images/mountain_7.png" data-speedx="0.1" data-speedy="0.1" data-speedz="0" data-rotation="0.11" data-distance="2100" class="parallax mountain_7">
+            <img src="/images/background.jpg" data-speedx="0.3" data-speedy="0.3" data-speedz="0" data-rotation="0" data-distance="-200" class="parallax background">
+            <img src="/images/fog_7.png" data-speedx="0.27" data-speedy="0.27" data-speedz="0" data-rotation="0" data-distance="400" class="parallax fog_7">
+            <img src="/images/mountain_10.png" data-speedx="0.195" data-speedy="0.195" data-speedz="0" data-rotation="0" data-distance="850" class="parallax mountain_10">
+            <img src="/images/fog_6.png" data-speedx="0.25" data-speedy="0.25" data-speedz="0" data-rotation="0" data-distance="1100" class="parallax fog_6">
+            <img src="/images/mountain_9.png" data-speedx="0.125" data-speedy="0.125" data-speedz="0.15" data-rotation="0" data-distance="1400" class="parallax mountain_9">
+            <img src="/images/mountain_8.png" data-speedx="0.1" data-speedy="0.1" data-speedz="0" data-rotation="0.02" data-distance="1700" class="parallax mountain_8">
+            <img src="/images/fog_5.png" data-speedx="0.16" data-speedy="0.16" data-speedz="0" data-rotation="0" data-distance="1900" class="parallax fog_5">
+            <img src="/images/mountain_7.png" data-speedx="0.1" data-speedy="0.1" data-speedz="0" data-rotation="0.11" data-distance="2100" class="parallax mountain_7">
             <div class="text parallax" data-speedx="0.07" data-speedy="0.07" data-speedz="0" data-rotation="0"  data-distance="0"> 
                 <h2>china</h2>
                 <h1>TRAVELO</h1>
             </div>
-            <img src="images/mountain_6.png" data-speedx="0.065" data-speedy="0.065" data-speedz="0.05" data-rotation="0.12" data-distance="2500" class="parallax mountain_6">
-            <img src="images/fog_4.png" data-speedx="0.135" data-speedy="0.135" data-speedz="0" data-rotation="0"  data-distance="2700" class="parallax fog_4">
-            <img src="images/mountain_5.png" data-speedx="0.08" data-speedy="0.08" data-speedz="0.13" data-rotation="0" data-distance="2900" class="parallax mountain_5">
-            <img src="images/fog_3.png" data-speedx="0.11" data-speedy="0.11" data-speedz="0" data-rotation="0" data-distance="3100" class="parallax fog_3">
-            <img src="images/mountain_4.png" data-speedx="0.059" data-speedy="0.059" data-speedz="0.32" data-rotation="0" data-distance="3300" class="parallax mountain_4">
-            <img src="images/mountain_3.png" data-speedx="0.04" data-speedy="0.04" data-speedz="0" data-rotation="0.05" data-distance="3500" class="parallax mountain_3">
-            <img src="images/fog_2.png" data-speedx="0.15" data-speedy="0.15" data-speedz="0" data-rotation="0" data-distance="3700" class="parallax fog_2">
-            <img src="images/mountain_2.png" data-speedx="0.0235" data-speedy="0.0235" data-speedz="0.42" data-rotation="0.15" data-distance="3900" class="parallax mountain_2">
-            <img src="images/mountain_1.png" data-speedx="0.027" data-speedy="0.027" data-speedz="0.53" data-rotation="0.2" data-distance="4100" class="parallax mountain_1">
-            <img src="images/sun_rays.png" class=" sun_rays">
-            <img src="images/fog_1.png" data-speedx="0.12" data-speedy="0.12" data-speedz="0" data-rotation="0" data-distance="4300" class="parallax fog_1">
+            <img src="/images/mountain_6.png" data-speedx="0.065" data-speedy="0.065" data-speedz="0.05" data-rotation="0.12" data-distance="2500" class="parallax mountain_6">
+            <img src="/images/fog_4.png" data-speedx="0.135" data-speedy="0.135" data-speedz="0" data-rotation="0"  data-distance="2700" class="parallax fog_4">
+            <img src="/images/mountain_5.png" data-speedx="0.08" data-speedy="0.08" data-speedz="0.13" data-rotation="0" data-distance="2900" class="parallax mountain_5">
+            <img src="/images/fog_3.png" data-speedx="0.11" data-speedy="0.11" data-speedz="0" data-rotation="0" data-distance="3100" class="parallax fog_3">
+            <img src="/images/mountain_4.png" data-speedx="0.059" data-speedy="0.059" data-speedz="0.32" data-rotation="0" data-distance="3300" class="parallax mountain_4">
+            <img src="/images/mountain_3.png" data-speedx="0.04" data-speedy="0.04" data-speedz="0" data-rotation="0.05" data-distance="3500" class="parallax mountain_3">
+            <img src="/images/fog_2.png" data-speedx="0.15" data-speedy="0.15" data-speedz="0" data-rotation="0" data-distance="3700" class="parallax fog_2">
+            <img src="/images/mountain_2.png" data-speedx="0.0235" data-speedy="0.0235" data-speedz="0.42" data-rotation="0.15" data-distance="3900" class="parallax mountain_2">
+            <img src="/images/mountain_1.png" data-speedx="0.027" data-speedy="0.027" data-speedz="0.53" data-rotation="0.2" data-distance="4100" class="parallax mountain_1">
+            <img src="/images/sun_rays.png" class=" sun_rays">
+            <img src="/images/fog_1.png" data-speedx="0.12" data-speedy="0.12" data-speedz="0" data-rotation="0" data-distance="4300" class="parallax fog_1">
         </div>
-        <a href="#first-content" onclick="imagesAnimation()" class="start">start now</a>
+        <a href="#start" onclick="imagesAnimation()" class="start">start now</a>
         <div class="slash"></div>
     </main>
     <div class="slash"></div>
-    <section class="content" id="first-content">
+    <section class="content section" id="start">
         <div class="text-content">
             <h2>discover the world with us</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae porro ex ipsum quidem eveniet officiis perferendis, ab recusandae veritatis corporis labore eum eaque, ducimus illo quisquam dolorem expedita iure veniam aspernatur iste, atque voluptatem temporibus vero! Voluptas sequi quisquam aliquid, voluptatum dolor officia magni, reiciendis amet a nesciunt aperiam recusandae cum possimus earum eius quae corporis unde molestiae explicabo atque tempore et tempora enim? Iusto tenetur, ipsum, rem nemo porro fugit quos, in dolore est molestias suscipit nulla doloribus perspiciatis. Modi, ullam quaerat, neque tempora praesentium sint voluptas fugit eligendi mollitia, quas dolore ex vel! Incidunt itaque sunt debitis ut odio suscipit cum repellendus excepturi nostrum quos atque consequatur veritatis quaerat eum qui non molestias reprehenderit magnam sequi, nesciunt voluptatem, deleniti laboriosam obcaecati. Aspernatur, provident incidunt? Excepturi delectus iure, quod enim, eaque cupiditate non aut laboriosam reprehenderit ad blanditiis ratione qui nihil laudantium reiciendis dolores exercitationem, officia accusantium dolorum! Accusantium.</p>
@@ -67,6 +78,17 @@
             <div meta-trans="2"></div>
         </div>
     </section>
+    <div class="line"></div>
+    <section class="content section" id="journey">
+        <div class="text-content">
+            <h2>our journey</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae porro ex ipsum quidem eveniet officiis perferendis, ab recusandae veritatis corporis labore eum eaque, ducimus illo quisquam dolorem expedita iure veniam aspernatur iste, atque voluptatem temporibus vero! Voluptas sequi quisquam aliquid, voluptatum dolor officia magni, reiciendis amet a nesciunt aperiam recusandae cum possimus earum eius quae corporis unde molestiae explicabo atque tempore et tempora enim? Iusto tenetur, ipsum, rem nemo porro fugit quos, in dolore est molestias suscipit nulla doloribus perspiciatis. Modi, ullam quaerat, neque tempora praesentium sint voluptas fugit eligendi mollitia, quas dolore ex vel! Incidunt itaque sunt debitis ut odio suscipit cum repellendus excepturi nostrum quos atque consequatur veritatis quaerat eum qui non molestias reprehenderit magnam sequi, nesciunt voluptatem, deleniti laboriosam obcaecati. Aspernatur, provident incidunt? Excepturi delectus iure, quod enim, eaque cupiditate non aut laboriosam reprehenderit ad blanditiis ratione qui nihil laudantium reiciendis dolores exercitationem, officia accusantium dolorum! Accusantium.</p>
+        </div>
+    </section>
+    <div class="line"></div>
+    <section class="content section" id="offers">
+    </section>
+    <div class="line"></div>
     <script src="main.js"></script>
 </body>
 </html>
